@@ -6,7 +6,7 @@
 %
 % This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 %-----------------------------------------------------------
 \usepackage[empty]{fullpage}
@@ -36,6 +36,8 @@
 
 
 \begin{document}
+% ONLY IN FULL RESUME AND CV
+\pagestyle{plain}
 % \begin{table}[]
 %     \centering
     
@@ -53,6 +55,18 @@
 \end{tabular*}
 
 \vspace{0.1in}
+
+% \begingroup
+%     \fontsize{12pt}{12pt}\selectfont
+%     \textbf{Objective}: Seeking a fascinating internship in collaborative environment to solve challenging software development, cybersecurity, or AI/ML problems
+% \endgroup
+% \vspace{1em}
+% \resheading{Objective}
+% \begin{itemize}
+%     \item[]
+%     Seeking a fascinating internship in collaborative environment to solve challenging software development, cybersecurity, or AI/ML problems
+%     % Seeking a fascinating software development, cybersecurity, or AI/ML internship to leverage and hone computer science skills in a collaborative team environment
+% \end{itemize}
 
 \resheading{Education}
 \begin{itemize}
@@ -74,17 +88,20 @@
 	\end{itemize}
 \end{itemize}
 
-\resheading{Skills}
+% \resheading{Skills}
 
-\begin{description}
-\item[Languages:] Java, Python, JavaScript, Golang, SQL, HTML, CSS, LaTeX % Markdown, Bash are there, but not necessary
-\item[Software:] Terminal (Linux, Mac), Postman, Android Studio, Firebase, Redis, Visual Studio Code, IntelliJ IDEA, PyCharm, jGRASP, Jupyter Notebook, Google Colabratory
-\item[Infrastructures:] Git, MySQL, MongoDB, Node.js, Linux OS (Ubuntu, Fedora)
-% \item[Miscellaneous:]
-% Great troubleshooting and debugging skills, great at explaining concepts to other people
-\end{description}
+% \begin{description}
+% \item[Languages:] Java, Python, JavaScript, Golang, SQL, HTML, CSS, LaTeX % Markdown, Bash are there, but not necessary
+% \item[Software:] Terminal (Linux, Mac), Postman, Android Studio, Firebase, Redis, Visual Studio Code, IntelliJ IDEA, PyCharm, jGRASP, Jupyter Notebook, Google Colabratory
+% \item[Infrastructures:] Git, MySQL, MongoDB (including Atlas), Node.js, Linux OS (Ubuntu, Fedora)
+% % \item[Miscellaneous:]
+% % Great troubleshooting and debugging skills, great at explaining concepts to other people
+% \end{description}
 
-\resheading{Experience and Projects}
+\resheading{Selected Experience and Projects}
+
+\vspace{1em}
+The full list of projects I have worked on can be found on my GitHub: github.com/2019aliu
 
 \begin{itemize}
 % \item
@@ -98,10 +115,24 @@
 \item
     \ressubheading{Tracker-X}{Atlanta, GA}{Create-X: Idea to Prototype}{January 2020 - Present}
     \begin{itemize}
-        \item Create a tracking device that has better range than most commercially available tracking tags
-        \item Uses Global Positioning System (GPS) to determine vicinity of device, Radio Frequency Identification (RFID) to identity exact location, and Android/Swift to create a mobile app to easily manage tracking
-        \item Technologies used: Android, Swift, RFID, GPS
+        \resitem{Create a tracking device that has better range than most commercially available tracking tags by utilizing GPS technology}
+        % \item Uses Global Positioning System (GPS) to determine vicinity of device, Bluetooth/Wifi to identity exact location, and Android Studio to create a mobile app to easily manage tracking
+        \resitem{Technologies used: Android Studio, Java, GPS, Google Maps API}
     \end{itemize}
+\item
+    \ressubheading{Creating the Next}{Atlanta, GA}{Hacklytics 2020}{February 22-23, 2020}
+    \begin{itemize}
+        \resitem{Visualized unemployment data and other macroeconomic factors nationally and globally, and built multivariate regression model to determine how much the government should spend on unemployment}
+        \resitem{Won best use of visualizations}
+        \resitem{Technologies used: Python, Plotly, Seaborn, Matplotlib, MongoDB Atlas, Pandas, Jupyter Notebook, Flask}
+    \end{itemize}
+% \item
+%     \ressubheading{FoxStocks}{Athens, GA}{UGAHacks 5}{February 7-9, 2020}
+%     \begin{itemize}
+%         \resitem{Created web application to teach new investors how to invest in stocks. My part was mostly backend work.} 
+%         \resitem{Won best use of MongoDB Atlas}
+%         \resitem{Technologies used: Flask, Jinja, MongoDB Atlas, Python, BlackRock Aladdin API}
+%     \end{itemize}
 % \item
 %     \ressubheading{TimePlotter}{Atlanta, GA}{Big Data Big Impact Club}{October 2019 - Present}
 %     \begin{itemize}
@@ -109,23 +140,23 @@
 %         \item Technologies used: Pandas, Google Maps API, Python
 %     \end{itemize}
 \item
-    \ressubheading{Season2Season}{Atlanta, GA}{Agency Club}{October 2019 - Present}
+    \ressubheading{Season2Season}{Atlanta, GA}{Agency Club}{October 2019 - December 2019}
     \begin{itemize}
-        \item Create a tool to change the season of an outdoors picture using a Generative Adversarial Network (GAN) machine-learning model trained with 1000+ images
-        \item Technologies used: PyTorch, Python
+        \resitem{Create a tool to change the season of an outdoors picture using a Generative Adversarial Network (GAN) machine-learning model trained with 1000+ images}
+        \resitem{Technologies used: PyTorch, Python}
     \end{itemize}
-\item
-    \ressubheading{Inline}{Durham, NC}{HackDuke}{November 2-3, 2019}
-    \begin{itemize}
-        \item Created web application to search for nearby health centers with the specified treatments and sort them by transportation time using Google Maps API
-        \item Technologies used: Flask, Google Maps API, MongoDB Atlas, HTML/CSS/JS
-    \end{itemize}
-\item
-    \ressubheading{Stockastic}{Atlanta, GA}{HackGT}{October 25-27, 2019}
-    \begin{itemize}
-        \item Designed and implemented a web application that helps users to monitor stocks of their interest by conducting sentiment analysis of Twitter tweets about the corresponding companies
-        \item Technologies used: React.js, Express.js, HTML/CSS, MongoDB,  Twitter API, Google Cloud Natural Language API
-    \end{itemize}
+% \item
+%     \ressubheading{Inline}{Durham, NC}{HackDuke 2020}{November 2-3, 2019}
+%     \begin{itemize}
+%         \item Created web application to search for nearby health centers with the specified treatments and sort them by transportation time using Google Maps API
+%         \item Technologies used: Flask, Google Maps API, MongoDB Atlas, HTML/CSS/JS
+%     \end{itemize}
+% \item
+%     \ressubheading{Stockastic}{Atlanta, GA}{HackGT 6}{October 25-27, 2019}
+%     \begin{itemize}
+%         \item Designed and implemented a web application that helps users to monitor stocks of their interest by conducting sentiment analysis of Twitter tweets about the corresponding companies
+%         \item Technologies used: React.js, Express.js, HTML/CSS, MongoDB,  Twitter API, Google Cloud Natural Language API
+%     \end{itemize}
 \item
     \ressubheading{Software Developer Intern}{Greenbelt, MD}{Fluency Security Corporation}{June 2019 - August 2019}
 	\begin{itemize}
@@ -134,12 +165,12 @@
 		\resitem{Unit tested log management software with Golang's unit testing framework}
 		\resitem{Technologies used: Golang (including Gin server), MongoDB, Bootstrap, Vue.js, Node-RED, Visual Studio Code}
 	\end{itemize}
-\item
-    \ressubheading{Tetris: Forty Lines}{Alexandria, VA}{Mobile Applications Development}{March 2019 - June 2019}
-	\begin{itemize}
-		\resitem{Implemented a swipe-capable Tetris Android app in Android Studio with Java backend}
-		\resitem{Technologies used: Android Studio, Java}
-	\end{itemize}
+% \item
+%     \ressubheading{Tetris: Forty Lines}{Alexandria, VA}{Mobile Applications Development}{March 2019 - June 2019}
+% 	\begin{itemize}
+% 		\resitem{Implemented a swipe-capable Tetris Android app in Android Studio with Java backend}
+% 		\resitem{Technologies used: Android Studio, Java}
+% 	\end{itemize}
 % \item
 %     \ressubheading{Swipe-based Tetris}{Alexandria, VA}{Mobile Applications Development}{March 2019 - June 2019}
 % 	\begin{itemize}
@@ -201,7 +232,7 @@
 %     \end{itemize}
 \end{itemize}
 
-% \pagebreak
+\pagebreak
 
 \resheading{Research Experience}
 \begin{itemize}
@@ -230,6 +261,16 @@
 	
 \end{itemize}
 
+\resheading{Skills}
+
+\begin{description}
+\item[Languages:] Java, Python, JavaScript, Golang, SQL, HTML, CSS, LaTeX % Markdown, Bash are there, but not necessary
+\item[Software:] Terminal (Linux, Mac), Postman, Android Studio, Visual Studio Code, Jupyter Notebook, IntelliJ IDEA, PyCharm, jGRASP, Google Colabratory
+\item[Infrastructures and Frameworks:] Node.js, React.js, Bootstrap, Git, MySQL, MongoDB/MongoDB Atlas, Firebase, Redis, Linux OS (Ubuntu, Fedora)
+% \item[Miscellaneous:]
+% Great troubleshooting and debugging skills, great at explaining concepts to other people
+\end{description}
+
 \resheading{Community Leadership}
 \begin{itemize}
 \item
@@ -254,6 +295,26 @@
 % 		\resitem{Continued this instruction by having the children make model neurons (2019)}
 % 	\end{itemize}
 	
+\end{itemize}
+
+\resheading{Non-academic Activities}
+\begin{itemize}
+\item
+    \ressubheading{Member, Georgia Tech Swim Club}{Atlanta, GA}{Georgia Tech}{August 2019 - Present}
+    \begin{itemize}
+        \resitem{Practice, compete, socialize, and volunteer with the members and coaches of the swim club}
+        \resitem{Qualified for the 2020 College Club Swimming National Championship}
+    \end{itemize}
+\item
+    \ressubheading{Member, GT Investment Club}{Atlanta, GA}{Georgia Tech}{January 2020 - Present}
+    \begin{itemize}
+        \resitem{Studying in the mentorship program to understand accounting and investing fundamentals and strategies}
+    \end{itemize}
+\item
+    \ressubheading{Member, GT Pianoforte}{Atlanta, GA}{Georgia Tech}{January 2020 - Present}
+    \begin{itemize}
+        \resitem{Play piano at concerts and socialize with other members of the club}
+    \end{itemize}
 \end{itemize}
 
 \end{document}
