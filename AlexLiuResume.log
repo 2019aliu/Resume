@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  16 APR 2020 13:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  10 JUN 2020 18:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -87,32 +87,32 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 101--102
 [][][][][][][]  
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 116.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 108.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 116.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 108.
  [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 243--244
+Overfull \hbox (6.0pt too wide) in paragraph at lines 267--268
 [][][][][][][]  
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 270--271
+Overfull \hbox (6.0pt too wide) in paragraph at lines 294--295
 [][][][][][][]  
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 280--281
+Overfull \hbox (6.0pt too wide) in paragraph at lines 304--305
 [][][][][][][]  
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 306--307
+Overfull \hbox (6.0pt too wide) in paragraph at lines 330--331
 [][][][][][][]  
  []
 
@@ -120,7 +120,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 306--307
 Here is how much of TeX's memory you used:
  789 strings out of 492616
  10198 string characters out of 6129482
- 77619 words of memory out of 5000000
+ 76619 words of memory out of 5000000
  4758 multiletter control sequences out of 15000+600000
  7696 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -132,7 +132,7 @@ c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public
 c/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmti10.pfb>
-Output written on AlexLiuResume.pdf (2 pages, 97138 bytes).
+Output written on AlexLiuResume.pdf (2 pages, 99433 bytes).
 PDF statistics:
  35 PDF objects out of 1000 (max. 8388607)
  24 compressed objects within 1 object stream
