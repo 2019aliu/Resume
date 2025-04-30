@@ -1,0 +1,194 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2007-2014 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,10pt]{article}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.80}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parskip}{-0.25em}  % spacing between items
+\usepackage{hyperref}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-3.5pt}}  % line spacing
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{0.989\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+% spacing between left and right columns of ressubheading
+% do NOT modify -- adjusted for A4 paper
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}  
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}  % space between resheading and first resitem
+%-----------------------------------------------------------
+
+
+\begin{document}
+% ONLY IN FULL RESUME AND CV
+\pagestyle{plain}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+    \textbf{\large Alexander Y. Liu} & 2019alexliu@gmail.com\\
+    % & Website: \url{https://2019aliu.github.io} \\
+\end{tabular*}\\
+% Enthusiastic highest honors graduate with intensive intern experience in and passionate about AI and UI/UX\\
+% seeking a career in data science, machine learning engineering, and full stack engineering\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Education}
+\begin{itemize}
+\item[]
+    % \ressubheading{Georgia Institute of Technology}{GPA: N/A \hspace{1em} Atlanta, GA}{M.S. Computer Science -- Interactive Intelligence, Spring 2023}{August 2022 - Present}
+    \ressubheading{Georgia Institute of Technology}{GPA: 3.7 \hspace{1em} Atlanta, GA}{M.S. Computer Science -- Interactive Intelligence}{August 2022 - Present (Expected: December 2023)}
+        \begin{itemize}
+            \resitem{Notable courses: Natural Language Processing, Design and Analysis of Algorithms, Artificial Intelligence, Data and Visual Analytics, Machine Learning, Deep Learning, Human Computer Interaction}
+            % \resitem{Notable courses: Artificial Intelligence, Data and Visual Analytics, Knowledge-based Artificial Intelligence, Qualitative Methods for Human Computer Interaction}
+            % \resitem{Teaching Assistant for Computer Vision (starting August 2022)}
+        \end{itemize}
+\item[]  % empty optional argument means no bullet point
+    \ressubheading{Georgia Institute of Technology}{GPA: 3.8 \hspace{1em} Atlanta, GA}{B.S. Computer Science}{August 2019 - May 2022}
+	\begin{itemize}
+	    % \resitem{Notable courses: Computer Vision, Deep Learning, Machine Learning, Automata and Complexity, Object-Oriented Design, Computer Organization and Programming (Intro to C / Assembly), Database Systems, Honors Linear Algebra with Abstract Vector Spaces, Statistics and Applications, Discrete Mathematics, Information Visualizations, User Interface Design, Cognitive Science}
+            % \resitem{Graduated with Highest Honors}
+            \resitem{Notable courses: Computer Vision, Automata and Complexity, Object-Oriented Design, Computer Organization and Programming in C and Assembly, Database Systems, Honors Linear Algebra with Abstract Vector Spaces, Statistics and Applications, Discrete Mathematics, Information Visualizations, User Interface Design}
+	\end{itemize}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Experience}
+
+\begin{itemize}
+\item
+    \ressubheading{Georgia Institute of Technology}{Atlanta, GA}{Graduate Teaching Assistant, Computer Vision}{August 2022 - December 2022}
+    \begin{itemize}
+        \resitem{Create and monitor project modeling camera calibration and image stitching for self-driving cars}
+        \resitem{Reinforce concepts from lectures and assist with problem solving and code debugging}
+    \end{itemize}
+\item
+    \ressubheading{Meta}{Burlingame, CA}{Software Engineering Intern}{May 2022 - August 2022}
+    \begin{itemize}
+        \resitem{Prototyped Text to Speech (TTS) feature for Meta (Oculus) Quest 2 with Android AccessibilityServices, and developed first Kotlin code for Quest 2's UI/UX in the process}
+        \resitem{Collaborated with cross-functional groups to optimize TTS prototype's CPU and memory usage on Quest 2 and produced roadmap for pushing TTS prototype to production}
+        \resitem{Constructed continuous build and continuous integration (CI) pipeline for the Quest 2's Accessibility APK using Facebook BUCK and internal CI tools, reducing deployment time by 50\% for AR/VR accessibility features}
+        % \resitem{References: \href{https://www.linkedin.com/in/christopher-dinh/}{Christopher Dinh}, \href{https://www.linkedin.com/in/brandon-dudley-m-sc-pmp-csm-6b1a5421/}{Brandon Dudley}, Ram N}
+        \resitem{Technologies used: Kotlin, Android SDK, Facebook BUCK, Meta CI/CD}
+    \end{itemize}
+\item
+    \ressubheading{NCR Corporation}{Atlanta, GA - remote}{Software Engineering Intern}{May 2021 - August 2021}
+    \begin{itemize}
+        % as measured by google developer tools > console
+        \resitem{Built Progressive Web App (PWA) release of NCR's point of sales software, Emerald, improving loading speed by 78\% and offline functionality for 1000s of nation-wide grocery chains}
+        \resitem{Implemented proof of concept of cryptocurrency payment for Emerald using the Rinkeby testnet, pushing one of the company's top priorities in blockchain technologies}
+        % \resitem{References: \href{https://www.linkedin.com/in/adarsh-rai/}{Adarsh Rai}, \href{https://www.linkedin.com/in/ncwolter/}{Nicholas Wolter}, \href{https://www.linkedin.com/in/brandon-wright-850181ba/}{Brandon Wright}}
+        \resitem{Technologies used: TypeScript, React.js, Figma, IndexedDB, Workbox, Nest.js}
+    \end{itemize}
+\item
+    \ressubheading{Georgia Tech FinTech Lab}{Atlanta, GA}{Undergraduate Researcher}{March 2021 - November 2021}
+    \begin{itemize}
+        \resitem{Created web crawler to preprocess 10000s of Federal Reserve (Fed) documents using Selenium and BeautifulSoup}
+        \resitem{Automatically generated topics of Fed meeting agendas with NLP text analysis and generative statistical models}
+        \resitem{Analyzed sentiment of Fed statements to understand Fed opinions of various market sectors using BERT}
+        \resitem{Technologies used: Python, PyTorch, Selenium, BeautifulSoup}
+    \end{itemize}
+\item
+    \ressubheading{S\&C Electric}{Rockville, MD - remote}{Software Development Intern}{May 2020 - August 2020}
+    \begin{itemize}
+        % \resitem{Led design of backend, implementation, testing, and documentation of an application to monitor and manage 10000s of S\&C devices}
+        \resitem{Restructured application backend microservices and proxy to monitor and manage 10000s of S\&C devices, resulting in 4x performance gain}
+        \resitem{Designed application user interface (UI) in Figma and implemented the UI with React and Electron}
+        % \resitem{Redesigned and implemented backend microservices and proxy to retrieve data from S\&C Electric's devices, }
+        % \resitem{References: \href{https://www.linkedin.com/in/qina-tan-920755b/}{Qina Tan}, Ameer Sami, Daniel Anderson}
+        \resitem{Technologies used: Java, JavaScript, React.js, Spring Boot, GraphQL, Redis, Figma, WebSocket, Electron.js}
+    \end{itemize}
+\item
+    \ressubheading{Fluency Security Corporation}{Greenbelt, MD}{Software Development Intern}{June 2019 - August 2019}
+    \begin{itemize}
+        \resitem{Developed a web-based trouble ticketing system, FasterIncidentResponse, for use at client demonstrations}
+        \resitem{Conducted unit tests of log management software in Go (golang), documented software with Postman}
+        % \resitem{Unit tested log management software in Golang}
+        % \resitem{Documented log management software with Postman}
+        \resitem{Technologies used: Go (golang), MongoDB, Bootstrap, Vue.js, Git, Postman, Markdown, Node-RED}
+    \end{itemize}
+\end{itemize}
+
+% Additional projects can be viewed on my github: \url{https://github.com/2019aliu} \vspace{1em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Skills}
+
+\begin{description}
+\item[Languages:] Python, Java, JavaScript/TypeScript, Kotlin, Golang, SQL, HTML, CSS, Bash
+% Not as comfortable with: Golang, SQL, Dart; Questionable: HTML/CSS, 
+% Questionable (doesn't say anything): HTML, CSS, LaTeX, Markdown, Bash
+\item[Infrastructures, Frameworks, and Software:] Git/Mercurial, PyTorch, Jupyter Notebook/Google Colabratory, Node.js, React.js, Android, Spring Framework, Figma, MySQL, MongoDB, Firebase, Keras, SCSS/SASS, Bootstrap, AWS Cloud Computing, Apache Spark, Sketch
+% \item[Infrastructures and Frameworks:] Git/Mercurial, PyTorch, Node.js, React.js, Android, Spring Framework, MySQL, MongoDB, Firebase, Keras, SCSS/SASS, Bootstrap
+% % Not as comfortable with: Angular, Flutter, Redis, Vue.js
+% \item[Software:] Figma, Jupyter Notebook/Google Colabratory, Android Studio, AWS S3, AWS EC2, AWS EMR, Apache Spark, Sketch
+% % Not as comfortable with: Heroku, Google Colabratory, Windows Subsystem for Linux (WSL), Postman
+\end{description}
+
+% \pagebreak
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \resheading{Research Experience}
+% \begin{itemize}
+% \item
+%     \ressubheading{FunTech Group}{Atlanta, GA}{GT FinTech Lab}{March 2021 - May 2021, September 2021 - November 2021}
+%     \begin{itemize}
+%         \resitem{Created a web crawler to download and preprocess 10000s of Federal Reserve documents using Selenium and BeautifulSoup}
+%         \resitem{Generated topics of focus for Federal Reserve meeting agendas with Latent Dirichlet Allocation}
+%         \resitem{Analyzed sentiment of Fed statements to understand Fed opinions on various market sectors using a finance version of BERT}
+%     \end{itemize}
+% \item
+%     \ressubheading{Move2Music}{Atlanta, GA - remote}{Parikh Lab}{August 2020 - December 2020}
+%     \begin{itemize}
+%         \resitem{Researched uses of recurrent neural networks and reinforcement in generating music from video footage of dance}
+%         \resitem{Used modern encoding techniques and LSTMs to prototype pairing dance video with appropriate music}
+%     \end{itemize}
+% \end{itemize}
+
+% \pagebreak
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \resheading{Campus Organizations}
+% \begin{itemize}
+% \item
+%     \ressubheading{Executive Board Member, GT Pianoforte}{Atlanta, GA}{Georgia Tech}{September 2020 - Present}
+%     \begin{itemize}
+%         \resitem{Redesign website for the organization using Wordpress}
+%         \resitem{Manage piano jam sessions and manage social media on Discord}
+%         \resitem{Play piano at concerts and socialize with other members of the club}
+%         \resitem{Previous statuses: Member: January 2020 - September 2020}
+%     \end{itemize}
+% \item
+%     \ressubheading{Social Committee Member, Georgia Tech Swim Club}{Atlanta, GA}{Georgia Tech}{August 2020 - January 2021}
+%     \begin{itemize}
+%         \resitem{Organize and manage funds for social events for the swim club, such as weekly virtual trivia and other socially-distanced events}
+%         \resitem{Practice, compete, socialize, and volunteer with the members and coaches of the swim club}
+%         \resitem{Qualified for multiple events in the 2020 College Club Swimming National Championship (unfortunately cancelled)}
+%         \resitem{Previous statuses: Member: August 2019 - July 2020}
+%     \end{itemize}
+% \end{itemize}
+
+\end{document}
